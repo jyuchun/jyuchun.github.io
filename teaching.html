@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三的个人主页 - Teaching</title>
-    </head>
+    <title>jyuchun - Teaching</title>
+    <style>
+        /* 基础样式复位 */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; display: flex; color: #333; line-height: 1.6; }
+
+        /* 左侧固定边栏 */
+        .sidebar { width: 260px; height: 100vh; background-color: #f8f9fa; border-right: 1px solid #e9ecef; position: fixed; top: 0; left: 0; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+        .sidebar h1 { font-size: 24px; margin-bottom: 20px; color: #212529; font-weight: 600; text-align: center; }
+        .sidebar .avatar { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .sidebar nav { width: 100%; }
+        .sidebar nav a { display: block; padding: 12px 20px; color: #495057; text-decoration: none; border-radius: 6px; margin-bottom: 8px; font-size: 16px; transition: all 0.2s; }
+        .sidebar nav a:hover { background-color: #e9ecef; color: #007bff; }
+        .sidebar nav a.active { background-color: #007bff; color: #fff; font-weight: bold; }
+
+        /* 右侧内容区 */
+        .main-content { margin-left: 260px; padding: 50px 80px; max-width: 900px; width: calc(100% - 260px); }
+        h2 { font-size: 28px; margin-bottom: 20px; border-bottom: 2px solid #dee2e6; padding-bottom: 8px; color: #212529; }
+        h3 { font-size: 20px; margin: 20px 0 10px 0; color: #343a40; }
+        p { margin-bottom: 15px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
 <body>
 
     <div class="sidebar">
-        <h1>张三</h1>
-        <img class="avatar" src="assets/avatar.jpg" alt="Profile Photo">
+        <h1>jyuchun</h1>
+        <img class="avatar" src="assets/证件照250919.jpg" alt="Profile Photo">
         <nav>
             <a href="index.html">Home</a>
             <a href="research.html">Research</a>
@@ -22,8 +44,8 @@
         
         <h3>主讲课程</h3>
         <ul>
-            <li><strong>计算机科学导论 (Introduction to CS)</strong> - 本科生课程, 2025秋季/2026春季</li>
-            <li><strong>机器学习与数据挖掘 (Machine Learning)</strong> - 研究生课程, 2026春季</li>
+            <li><strong>课程名称一</strong> - 2026春季</li>
+            <li><strong>课程名称二</strong> - 2025秋季</li>
         </ul>
     </div>
 
